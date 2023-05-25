@@ -1,115 +1,105 @@
-# Vite-Vue
+# Frontend Mentor - Product feedback app solution
 
-Vite-Vue is a scaffold project for quickly setting up a Vue 3 application with Vite, providing an integrated solution for using Pinia, Vue Router, Tailwind CSS, and other essential libraries.
+! This solution is not yet ready. I'm still working on it.
 
-https://sunny-boba-f48ca6.netlify.app/
+This is a solution to the [Product feedback app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Features
+## Table of contents
 
-- Pre-configured with Vite for fast development and optimized builds
-- Integrated styling solution using Tailwind CSS and SASS support for extended styling capabilities
-- Centralized state management using Pinia
-- File based routing
-- Type checking with TypeScript throughout development and build processes
-- Collection of Vue composition utilities with VueUse
-- SVGO support
-- JSX syntax support
-- SSG support with sitemap for production builds
-- Auto-imported layouts
-- Auto-imported components, stores, composables and utils
-- Testing setup with Playwright and Vitest
-- Code quality tools: ESLint, Prettier, Husky, [Lint Staged\*](#note-about-lint-staged), and Commitlint
+- [Frontend Mentor - Product feedback app solution](#frontend-mentor---product-feedback-app-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-## Recommended IDE Setup
+## Overview
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### The challenge
 
-## Type Support for `.vue` Imports in TS
+Users should be able to:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Create, read, update, and delete product feedback requests
+- Receive form validations when trying to create/edit feedback requests
+- Sort suggestions by most/least upvotes and most/least comments
+- Filter suggestions by category
+- Add comments and replies to a product feedback request
+- Upvote product feedback requests
+- **Bonus**: Keep track of any changes, even after refreshing the browser (`localStorage` could be used for this if you're not building out a full-stack app)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+### Screenshot
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+![](./screenshot.jpg)
 
-## Customize configuration
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
-## Project Setup
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-```sh
-npm install
+### Links
+
+- Solution URL: Not Yet Ready
+- Live Site URL: [Netlify](https://product-feedback-app-fm.netlify.app/)
+
+## My process
+
+### Built with
+
+- [Vue](https://vuejs.org/) - The Progressive JavaScript Framework
+- [HeadlessUI](https://headlessui.com/) - Completely unstyled, fully accessible UI components
+- [Pinia](https://pinia.vuejs.org/) - The intuitive store for Vue.js
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework
+
+### What I learned
+
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+```js
+const proudOfThisFunc = () => {
+  console.log("🎉");
+};
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-```sh
-npm run test:unit
-# To watch the tests with the UI
-npm run test:unit:watch
-```
+### Continued development
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-```sh
-# Install browsers for the first run
-npx playwright install
+### Useful resources
 
-# When testing on CI, must build the project first
-npm run build
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Watch the end-to-end tests with the UI
-npm run test:e2e:watch
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
+## Author
 
-### Format with [Prettier](https://prettier.io/)
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-```sh
-npm run format
-```
+## Acknowledgments
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-
-### Format and lint
-
-```sh
-npm run lf
-```
-
-### Note about lint-staged
-
-To prevent future conflicts with linted files, the `npx lint-staged` command does not have file based linting and formatting.
-
-Instead, the `npm run lf` command is now used to process all files.
-
-`lint-staged` is for testing only the staged files with `vitest related` for now.
-
-This change was made because sorting class names in files can lead to conflicts, even if no modifications were made to other files by the contributors.
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.

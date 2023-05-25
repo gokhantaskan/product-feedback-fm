@@ -18,14 +18,15 @@ defineProps<{
           :class="[
             'flex items-center justify-center gap-2 self-start tablet:flex-col',
             'w-full rounded bg-helper-hover p-2 transition-all max-tablet:w-fit',
+            'text-helper-t hocus:bg-helper-over',
           ]"
         >
-          <UpIcon class="w-2" /><span class="text-sm font-bold">{{ pr.upvotes }}</span>
+          <UpIcon class="w-2 text-secondary" /><span class="text-sm font-bold">{{ pr.upvotes }}</span>
         </button>
       </div>
       <!-- m1/t2 -->
       <div class="max-tablet:col-span-2">
-        <h3 class="mb-1">{{ pr.title }}</h3>
+        <h2 class="h3 mb-1">{{ pr.title }}</h2>
         <p class="mb-3">{{ pr.description }}</p>
         <!-- Badge -->
         <div class="body-3 inline-block rounded bg-helper-hover px-4 leading-[30px] text-secondary">
@@ -33,7 +34,7 @@ defineProps<{
         </div>
       </div>
       <!-- m3/t3 -->
-      <div class="flex items-center justify-end gap-2 font-bold max-tablet:order-3">
+      <div class="flex items-center justify-end gap-2 font-bold text-helper-t max-tablet:order-3">
         {{ pr.comments?.length ?? 0 }}<BubbleIcon class="h-4" />
       </div>
     </div>

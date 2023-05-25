@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-4">
+  <footer class="bg-white py-4">
     <div class="container">
       <p class="text-center">
         {{ $appName }}
@@ -7,5 +7,5 @@
         ©{{ new Date().getFullYear() }}
       </p>
     </div>
-  </div>
+  </footer>
 </template>

@@ -19,7 +19,10 @@ const showDrawer = ref(false);
         <p>Feedback board</p>
       </div>
 
-      <button @click="showDrawer = true">
+      <button
+        aria-label="menu"
+        @click="showDrawer = true"
+      >
         <HamburgerIcon class="w-[20px]" />
       </button>
     </div>

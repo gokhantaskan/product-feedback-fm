@@ -27,13 +27,9 @@ const SIZES: { [key in Props["size"]]: string } = {
       <header class="card__header mb-6 flex items-baseline justify-between gap-2">
         <!-- TITLE -->
         <slot name="title">
-          <p
-            class="h3"
-            role="heading"
-            aria-level="3"
-          >
+          <div class="h3">
             {{ title }}
-          </p>
+          </div>
         </slot>
         <!-- ACTIONS -->
         <template v-if="$slots.actions">
