@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["vitest", "env.d.ts", "appconfig.mjs", "src/**/*", "types", "appconfig.d.ts", "package.json"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "jsxImportSource": "react",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@img/*": ["./src/assets/img/*"]
+    }
+  }
+}

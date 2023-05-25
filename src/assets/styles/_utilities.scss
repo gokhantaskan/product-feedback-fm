@@ -1,0 +1,7 @@
+@layer utilities {
+  .container {
+    @screen desktop {
+      max-width: 1110px;
+    }
+  }
+}

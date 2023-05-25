@@ -1,0 +1,81 @@
+@layer base {
+  *,
+  *::before,
+  *::after {
+    outline: none;
+
+    &:focus-visible {
+      @apply ring-2 ring-primary ring-offset-2 ring-offset-white;
+    }
+  }
+
+  html {
+    font-size: 13px;
+
+    @screen tablet {
+      font-size: 16px;
+    }
+
+    &.dark {
+      color-scheme: dark;
+    }
+  }
+
+  body {
+    font-size: 100%;
+    @apply text-helper-p bg-surface relative;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6),
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    @apply text-helper-t font-bold;
+  }
+
+  h1,
+  .h1 {
+    font-size: 1.5rem;
+    line-height: 2.1875;
+    letter-spacing: -0.33;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.25rem;
+    line-height: 1.8125;
+    letter-spacing: -0.25;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.125rem;
+    line-height: 1.625;
+    letter-spacing: -0.25;
+  }
+
+  h4,
+  .h4 {
+    line-height: 1.4375;
+    letter-spacing: -0.2;
+  }
+
+  body,
+  .body-1 {
+    line-height: 1.4375;
+  }
+
+  .body-2 {
+    font-size: 0.9375rem;
+    line-height: 1.375;
+  }
+
+  .body-3 {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.1875;
+  }
+}
